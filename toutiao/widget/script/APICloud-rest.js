@@ -46,7 +46,7 @@ function Resource(appId, appKey, baseurl) {
   this.headers = {};
   this.setHeaders("X-APICloud-AppId", this.appId);
   this.setHeaders("X-APICloud-AppKey", this.appCode);
-  this.setHeaders("Content-Type", "application/json;");
+  this.setHeaders("Content-Type", "application/json");
 }
 Resource.prototype.setHeaders = function (key, value) {
   this.headers[key] = value;
